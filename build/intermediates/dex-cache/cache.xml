@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="D:\workspace\AS\Wdecgrec\Wdecgrec\app\libs\android-logging-log4j-1.0.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="bee823e6955d3a5806700026f838ebbca907ac7a">
+        <dex dex="D:\workspace\AS\Wdecgrec\Wdecgrec\app\build\intermediates\pre-dexed\debug\android-logging-log4j-1.0.3_2389be38873d5a34152ee87935e6919719a48608.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\workspace\AS\Wdecgrec\Wdecgrec\app\libs\fastjson-1.2.8.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="aba3867820f46117ef0dfe760418b1bc0278894f">
+        <dex dex="D:\workspace\AS\Wdecgrec\Wdecgrec\app\build\intermediates\pre-dexed\debug\fastjson-1.2.8_2ff611be8b5f08b710d5807276372202ac4cb6e4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\workspace\AS\Wdecgrec\Wdecgrec\app\libs\httpclient-cache-4.3.4.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="ad6c1e2533fe6099e8c8ca182914dd025425f24d">
+        <dex dex="D:\workspace\AS\Wdecgrec\Wdecgrec\app\build\intermediates\pre-dexed\debug\httpclient-cache-4.3.4_71c8b1b5b080cd29b2a52223861771cf9cc325bd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\workspace\AS\Wdecgrec\Wdecgrec\app\libs\log4j-1.2.17.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="4f90475694c41965c9a0c8bac53ea5c690dea446">
+        <dex dex="D:\workspace\AS\Wdecgrec\Wdecgrec\app\build\intermediates\pre-dexed\debug\log4j-1.2.17_d84ab9d764d696caacf37e9b5a3135696c90cb74.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\workspace\AS\Wdecgrec\Wdecgrec\app\libs\BASE64.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="f80edc977b5165ff7c451e1c6b94de9f25d7e41f">
+        <dex dex="D:\workspace\AS\Wdecgrec\Wdecgrec\app\build\intermediates\pre-dexed\debug\BASE64_4e34b4ba453406d09e1ca6464ffa14d01d90e4a5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\workspace\AS\Wdecgrec\Wdecgrec\app\libs\httpmime-4.3.4.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="54ffde537682aea984c22fbcf0106f21397c5f9b">
+        <dex dex="D:\workspace\AS\Wdecgrec\Wdecgrec\app\build\intermediates\pre-dexed\debug\httpmime-4.3.4_7cc84374862ad132e3b8cfcb1350da421555c0b5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\workspace\AS\Wdecgrec\Wdecgrec\app\libs\httpclient-4.3.4.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="a9a1fef2faefed639ee0d0fba5b3b8e4eb2ff2d8">
+        <dex dex="D:\workspace\AS\Wdecgrec\Wdecgrec\app\build\intermediates\pre-dexed\debug\httpclient-4.3.4_52411e5bc4f50dadf5eb7687f74cc430aa80a941.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\workspace\AS\Wdecgrec\Wdecgrec\app\libs\httpcore-4.3.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="31fbbff1ddbf98f3aa7377c94d33b0447c646b6e">
+        <dex dex="D:\workspace\AS\Wdecgrec\Wdecgrec\app\build\intermediates\pre-dexed\debug\httpcore-4.3.2_672f8068bde8fa7358bb1d59247d5486d435d986.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\dev\android-sdk\extras\android\m2repository\com\android\support\support-v4\19.1.0\support-v4-19.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67">
+        <dex dex="D:\workspace\AS\Wdecgrec\Wdecgrec\app\build\intermediates\pre-dexed\debug\support-v4-19.1.0_fc5275100ee37ae34486abb855e70ab22a5c2fdb.jar" />
+    </item>
+
+</items>

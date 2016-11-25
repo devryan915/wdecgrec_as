@@ -1,0 +1,33 @@
+{
+  "buildFiles": [
+    "D:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\src\\main\\jni\\Android.mk",
+    "D:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\src\\main\\jni\\Application.mk"
+  ],
+  "cleanCommands": [
+    "D:\\dev\\android-sdk\\ndk-bundle\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dD:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\src\\main\\jni\\Android.mk NDK_APPLICATION_MK\u003dD:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\src\\main\\jni\\Application.mk APP_ABI\u003dx86 NDK_ALL_ABIS\u003dx86 NDEBUG\u003d1 APP_PLATFORM\u003dandroid-18 NDK_OUT\u003dD:/workspace/AS/Wdecgrec/Wdecgrec/app/build/intermediates/ndkBuild/debug/obj NDK_LIBS_OUT\u003dD:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\build\\intermediates\\ndkBuild\\debug\\lib clean"
+  ],
+  "libraries": {
+    "ecgfilter-debug-x86": {
+      "buildCommand": "D:\\dev\\android-sdk\\ndk-bundle\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dD:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\src\\main\\jni\\Android.mk NDK_APPLICATION_MK\u003dD:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\src\\main\\jni\\Application.mk APP_ABI\u003dx86 NDK_ALL_ABIS\u003dx86 NDEBUG\u003d1 APP_PLATFORM\u003dandroid-18 NDK_OUT\u003dD:/workspace/AS/Wdecgrec/Wdecgrec/app/build/intermediates/ndkBuild/debug/obj NDK_LIBS_OUT\u003dD:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\build\\intermediates\\ndkBuild\\debug\\lib D:/workspace/AS/Wdecgrec/Wdecgrec/app/build/intermediates/ndkBuild/debug/obj/local/x86/libecgfilter.so",
+      "toolchain": "toolchain-x86",
+      "abi": "x86",
+      "artifactName": "ecgfilter",
+      "files": [
+        {
+          "src": "D:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\src\\main\\jni\\ecgfilter.c",
+          "flags": "\"-gcc-toolchain\" \"D:/dev/android-sdk/ndk-bundle/build//../toolchains/x86-4.9/prebuilt/windows-x86_64\" \"-target\" \"i686-none-linux-android\" \"-ffunction-sections\" \"-funwind-tables\" \"-fstack-protector-strong\" \"-fPIC\" \"-Wno-invalid-command-line-argument\" \"-Wno-unused-command-line-argument\" \"-no-canonical-prefixes\" \"-g\" \"-O2\" \"-DNDEBUG\" \"-ID:/workspace/AS/Wdecgrec/Wdecgrec/app/src/main/jni\" \"-DANDROID\" \"-Wa,--noexecstack\" \"-Wformat\" \"-Werror\u003dformat-security\" \"-mstackrealign\" \"-isystem\" \"D:/dev/android-sdk/ndk-bundle/build//../platforms/android-18/arch-x86/usr/include\""
+        }
+      ],
+      "output": "D:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\build\\intermediates\\ndkBuild\\debug\\obj\\local\\x86\\libecgfilter.so"
+    }
+  },
+  "toolchains": {
+    "toolchain-x86": {
+      "cCompilerExecutable": "D:\\dev\\android-sdk\\ndk-bundle\\build\\..\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe"
+    }
+  },
+  "cFileExtensions": [
+    "c"
+  ],
+  "cppFileExtensions": []
+}

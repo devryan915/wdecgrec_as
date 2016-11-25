@@ -1,0 +1,100 @@
+# view res/layout/activity_ecg.xml #generated:48
+-keep class com.broadchance.ecgview.ECGGLSurfaceView { <init>(...); }
+
+# view res/layout/activity_add_contact.xml #generated:74
+-keep class com.broadchance.utils.comparator.SideBar { <init>(...); }
+
+# view AndroidManifest.xml #generated:71
+-keep class thoth.holter.ecg_010.login.LoginActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:83
+-keep class thoth.holter.ecg_010.login.RegisterActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:87
+-keep class thoth.holter.ecg_010.login.ResetPwdActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:99
+-keep class thoth.holter.ecg_010.main.EcgActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:91
+-keep class thoth.holter.ecg_010.main.ModeActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:49
+-keep class thoth.holter.ecg_010.manager.AppApplication { <init>(...); }
+
+# view AndroidManifest.xml #generated:146
+-keep class thoth.holter.ecg_010.receiver.BootCompleteReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:128
+-keep class thoth.holter.ecg_010.receiver.NetChangeReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:180
+-keep class thoth.holter.ecg_010.services.BleDataParserService { <init>(...); }
+
+# view AndroidManifest.xml #generated:176
+-keep class thoth.holter.ecg_010.services.BleDomainService { <init>(...); }
+
+# view AndroidManifest.xml #generated:165
+-keep class thoth.holter.ecg_010.services.BluetoothLeService { <init>(...); }
+
+# view AndroidManifest.xml #generated:185
+-keep class thoth.holter.ecg_010.services.GpsService { <init>(...); }
+
+# view AndroidManifest.xml #generated:170
+-keep class thoth.holter.ecg_010.services.GuardService { <init>(...); }
+
+# view AndroidManifest.xml #generated:123
+-keep class thoth.holter.ecg_010.settings.AddContactActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:119
+-keep class thoth.holter.ecg_010.settings.AddFamilyActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:156
+-keep class thoth.holter.ecg_010.settings.ModifyPwdActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:109
+-keep class thoth.holter.ecg_010.settings.MyInfoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:114
+-keep class thoth.holter.ecg_010.settings.OptionSettingsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:104
+-keep class thoth.holter.ecg_010.settings.SettingsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:160
+-keep class thoth.holter.ecg_010.settings.UploadActivity { <init>(...); }
+
+# view res/layout/activity_add_contact.xml #generated:9
+# view res/layout/activity_add_family.xml #generated:9
+# view res/layout/activity_ecg.xml #generated:10
+# view res/layout/activity_mode.xml #generated:8
+# view res/layout/activity_modify_pwd.xml #generated:9
+# view res/layout/activity_my_info.xml #generated:9
+# view res/layout/activity_option_settings.xml #generated:9
+-keep class thoth.holter.ecg_010.widget.CustomTitle { <init>(...); }
+
+# view res/layout/listview_addfamily_item.xml #generated:2
+-keep class thoth.holter.ecg_010.widget.GridItemLayout { <init>(...); }
+
+# view res/layout/activity_login.xml #generated:21
+# view res/layout/activity_login.xml #generated:36
+# view res/layout/activity_login_resetpwd.xml #generated:114
+# view res/layout/activity_login_resetpwd.xml #generated:35
+# view res/layout/activity_login_resetpwd.xml #generated:85
+# view res/layout/activity_login_resetpwd.xml #generated:99
+# view res/layout/activity_register.xml #generated:113
+# view res/layout/activity_register.xml #generated:128
+# view res/layout/activity_register.xml #generated:35
+# view res/layout/activity_register.xml #generated:84
+# view res/layout/activity_register.xml #generated:98
+-keep class thoth.holter.ecg_010.widget.LabelEditText { <init>(...); }
+
+# onClick res/layout/listview_choosecontact_item.xml #generated:20
+-keepclassmembers class * { *** addFamily(...); }
+
+# onClick res/layout/activity_mode.xml #generated:21
+-keepclassmembers class * { *** settings(...); }
+
+# onClick res/layout/activity_mode.xml #generated:53
+-keepclassmembers class * { *** wearMode(...); }
+

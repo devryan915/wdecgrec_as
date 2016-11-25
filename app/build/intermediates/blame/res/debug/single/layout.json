@@ -1,0 +1,134 @@
+[
+    {
+        "merged": "D:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\build\\intermediates\\res\\merged\\debug\\layout\\listview_addfamily_item.xml",
+        "source": "D:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\src\\main\\res\\layout\\listview_addfamily_item.xml"
+    },
+    {
+        "merged": "D:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_login_resetpwd.xml",
+        "source": "D:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\src\\main\\res\\layout\\activity_login_resetpwd.xml"
+    },
+    {
+        "merged": "D:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_mode.xml",
+        "source": "D:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\src\\main\\res\\layout\\activity_mode.xml"
+    },
+    {
+        "merged": "D:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\build\\intermediates\\res\\merged\\debug\\layout\\listitem_device.xml",
+        "source": "D:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\src\\main\\res\\layout\\listitem_device.xml"
+    },
+    {
+        "merged": "D:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_ecg.xml",
+        "source": "D:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\src\\main\\res\\layout\\activity_ecg.xml"
+    },
+    {
+        "merged": "D:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_appupdate.xml",
+        "source": "D:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\src\\main\\res\\layout\\dialog_appupdate.xml"
+    },
+    {
+        "merged": "D:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_settings.xml",
+        "source": "D:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\src\\main\\res\\layout\\activity_settings.xml"
+    },
+    {
+        "merged": "D:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\build\\intermediates\\res\\merged\\debug\\layout\\listview_offdata_item.xml",
+        "source": "D:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\src\\main\\res\\layout\\listview_offdata_item.xml"
+    },
+    {
+        "merged": "D:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\build\\intermediates\\res\\merged\\debug\\layout\\listview_chooseble_item.xml",
+        "source": "D:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\src\\main\\res\\layout\\listview_chooseble_item.xml"
+    },
+    {
+        "merged": "D:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_input_test.xml",
+        "source": "D:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\src\\main\\res\\layout\\dialog_input_test.xml"
+    },
+    {
+        "merged": "D:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\build\\intermediates\\res\\merged\\debug\\layout\\listview_changeskin_item.xml",
+        "source": "D:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\src\\main\\res\\layout\\listview_changeskin_item.xml"
+    },
+    {
+        "merged": "D:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_option_settings.xml",
+        "source": "D:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\src\\main\\res\\layout\\activity_option_settings.xml"
+    },
+    {
+        "merged": "D:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_choosephoneno.xml",
+        "source": "D:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\src\\main\\res\\layout\\dialog_choosephoneno.xml"
+    },
+    {
+        "merged": "D:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\build\\intermediates\\res\\merged\\debug\\layout\\common_title_status.xml",
+        "source": "D:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\src\\main\\res\\layout\\common_title_status.xml"
+    },
+    {
+        "merged": "D:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_choosebledev.xml",
+        "source": "D:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\src\\main\\res\\layout\\dialog_choosebledev.xml"
+    },
+    {
+        "merged": "D:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_login.xml",
+        "source": "D:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\src\\main\\res\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "D:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\build\\intermediates\\res\\merged\\debug\\layout\\listview_choosecontact_item.xml",
+        "source": "D:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\src\\main\\res\\layout\\listview_choosecontact_item.xml"
+    },
+    {
+        "merged": "D:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_upload.xml",
+        "source": "D:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\src\\main\\res\\layout\\activity_upload.xml"
+    },
+    {
+        "merged": "D:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_deviceunbind.xml",
+        "source": "D:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\src\\main\\res\\layout\\dialog_deviceunbind.xml"
+    },
+    {
+        "merged": "D:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_add_family.xml",
+        "source": "D:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\src\\main\\res\\layout\\activity_add_family.xml"
+    },
+    {
+        "merged": "D:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\build\\intermediates\\res\\merged\\debug\\layout\\listview_bledevinfo_item.xml",
+        "source": "D:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\src\\main\\res\\layout\\listview_bledevinfo_item.xml"
+    },
+    {
+        "merged": "D:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_settings_offdata.xml",
+        "source": "D:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\src\\main\\res\\layout\\dialog_settings_offdata.xml"
+    },
+    {
+        "merged": "D:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_add_contact.xml",
+        "source": "D:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\src\\main\\res\\layout\\activity_add_contact.xml"
+    },
+    {
+        "merged": "D:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_onekey_upload.xml",
+        "source": "D:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\src\\main\\res\\layout\\dialog_onekey_upload.xml"
+    },
+    {
+        "merged": "D:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\build\\intermediates\\res\\merged\\debug\\layout\\actionbar_indeterminate_progress.xml",
+        "source": "D:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\src\\main\\res\\layout\\actionbar_indeterminate_progress.xml"
+    },
+    {
+        "merged": "D:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_my_info.xml",
+        "source": "D:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\src\\main\\res\\layout\\activity_my_info.xml"
+    },
+    {
+        "merged": "D:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_changeskin.xml",
+        "source": "D:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\src\\main\\res\\layout\\dialog_changeskin.xml"
+    },
+    {
+        "merged": "D:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_settingsdevinfo.xml",
+        "source": "D:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\src\\main\\res\\layout\\dialog_settingsdevinfo.xml"
+    },
+    {
+        "merged": "D:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_modify_pwd.xml",
+        "source": "D:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\src\\main\\res\\layout\\activity_modify_pwd.xml"
+    },
+    {
+        "merged": "D:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_devicecheck.xml",
+        "source": "D:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\src\\main\\res\\layout\\dialog_devicecheck.xml"
+    },
+    {
+        "merged": "D:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_register.xml",
+        "source": "D:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\src\\main\\res\\layout\\activity_register.xml"
+    },
+    {
+        "merged": "D:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_show_loading.xml",
+        "source": "D:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\src\\main\\res\\layout\\dialog_show_loading.xml"
+    },
+    {
+        "merged": "D:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_tips.xml",
+        "source": "D:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\src\\main\\res\\layout\\dialog_tips.xml"
+    }
+]

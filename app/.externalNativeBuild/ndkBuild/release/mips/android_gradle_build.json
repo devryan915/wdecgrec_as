@@ -1,0 +1,33 @@
+{
+  "buildFiles": [
+    "D:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\src\\main\\jni\\Android.mk",
+    "D:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\src\\main\\jni\\Application.mk"
+  ],
+  "cleanCommands": [
+    "D:\\dev\\android-sdk\\ndk-bundle\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dD:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\src\\main\\jni\\Android.mk NDK_APPLICATION_MK\u003dD:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\src\\main\\jni\\Application.mk APP_ABI\u003dmips NDK_ALL_ABIS\u003dmips NDEBUG\u003d0 APP_PLATFORM\u003dandroid-18 NDK_OUT\u003dD:/workspace/AS/Wdecgrec/Wdecgrec/app/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003dD:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\build\\intermediates\\ndkBuild\\release\\lib clean"
+  ],
+  "libraries": {
+    "ecgfilter-release-mips": {
+      "buildCommand": "D:\\dev\\android-sdk\\ndk-bundle\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dD:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\src\\main\\jni\\Android.mk NDK_APPLICATION_MK\u003dD:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\src\\main\\jni\\Application.mk APP_ABI\u003dmips NDK_ALL_ABIS\u003dmips NDEBUG\u003d0 APP_PLATFORM\u003dandroid-18 NDK_OUT\u003dD:/workspace/AS/Wdecgrec/Wdecgrec/app/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003dD:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\build\\intermediates\\ndkBuild\\release\\lib D:/workspace/AS/Wdecgrec/Wdecgrec/app/build/intermediates/ndkBuild/release/obj/local/mips/libecgfilter.so",
+      "toolchain": "toolchain-mips",
+      "abi": "mips",
+      "artifactName": "ecgfilter",
+      "files": [
+        {
+          "src": "D:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\src\\main\\jni\\ecgfilter.c",
+          "flags": "\"-gcc-toolchain\" \"D:/dev/android-sdk/ndk-bundle/build//../toolchains/mipsel-linux-android-4.9/prebuilt/windows-x86_64\" \"-target\" \"mipsel-none-linux-android\" \"-fpic\" \"-ffunction-sections\" \"-funwind-tables\" \"-fstack-protector-strong\" \"-fmessage-length\u003d0\" \"-Wno-invalid-command-line-argument\" \"-Wno-unused-command-line-argument\" \"-no-canonical-prefixes\" \"-g\" \"-mips32\" \"-O2\" \"-DNDEBUG\" \"-ID:/workspace/AS/Wdecgrec/Wdecgrec/app/src/main/jni\" \"-DANDROID\" \"-Wa,--noexecstack\" \"-Wformat\" \"-Werror\u003dformat-security\" \"-isystem\" \"D:/dev/android-sdk/ndk-bundle/build//../platforms/android-18/arch-mips/usr/include\""
+        }
+      ],
+      "output": "D:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\build\\intermediates\\ndkBuild\\release\\obj\\local\\mips\\libecgfilter.so"
+    }
+  },
+  "toolchains": {
+    "toolchain-mips": {
+      "cCompilerExecutable": "D:\\dev\\android-sdk\\ndk-bundle\\build\\..\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe"
+    }
+  },
+  "cFileExtensions": [
+    "c"
+  ],
+  "cppFileExtensions": []
+}

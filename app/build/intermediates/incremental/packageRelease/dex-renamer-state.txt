@@ -1,0 +1,4 @@
+#Fri Nov 25 11:16:04 CST 2016
+base.0=D\:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\build\\intermediates\\transforms\\dex\\release\\folders\\1000\\1f\\main
+renamed.0=classes.dex
+file.0=D\:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\build\\intermediates\\transforms\\dex\\release\\folders\\1000\\1f\\main\\classes.dex

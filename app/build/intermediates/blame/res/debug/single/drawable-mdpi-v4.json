@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "D:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\main_bg.jpg",
+        "source": "D:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\src\\main\\res\\drawable-mdpi\\main_bg.jpg"
+    },
+    {
+        "merged": "D:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\register_bg.jpg",
+        "source": "D:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\src\\main\\res\\drawable-mdpi\\register_bg.jpg"
+    },
+    {
+        "merged": "D:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\login_bg.jpg",
+        "source": "D:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\src\\main\\res\\drawable-mdpi\\login_bg.jpg"
+    }
+]

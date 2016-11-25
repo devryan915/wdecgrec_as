@@ -1,0 +1,194 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121820"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <!-- <include layout="@layout/common_title_status" /> -->
+
+    <RelativeLayout
+        android:id="@+id/rlTitle"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/light_green"
+        android:gravity="center_vertical" >
+
+        <View
+            android:id="@+id/buttonTitleBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/common_title_contactshead" />
+
+        <TextView
+            android:id="@+id/textViewUseName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/buttonTitleBack"
+            android:text="-"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlTitle"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/llUpload"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/settings_upload" />
+
+            <TextView
+                style="@style/settings_textview"
+                android:text="@string/settings_upload" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llMyinfo"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/settings_myinfo" />
+
+            <TextView
+                style="@style/settings_textview"
+                android:text="@string/settings_myinfo" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llSetpwd"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/settings_pwd" />
+
+            <TextView
+                style="@style/settings_textview"
+                android:text="@string/settings_pwd" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llSettingsDevInfo"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/settings_settingsdevinfo" />
+
+            <TextView
+                style="@style/settings_textview"
+                android:text="@string/settings_settingsdevinfo" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llChangeSkin"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:orientation="horizontal" >
+
+            <View
+                android:id="@+id/viewChangeSkinIcon"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/settings_changeskin" />
+
+            <TextView
+                style="@style/settings_textview"
+                android:text="@string/settings_changeskin" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llAppUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/settings_appupdate" />
+
+            <TextView
+                android:id="@+id/textViewUpdate"
+                style="@style/settings_textview"
+                android:text="@string/settings_appupdate" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/llAppFactory"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/settings_appupdate" />
+
+            <TextView
+                android:id="@+id/textViewFactory"
+                style="@style/settings_textview"
+                android:text="工程模式" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llAppLogout"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="32dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/main_logout_sel" />
+
+        <TextView
+            style="@style/settings_textview"
+            android:text="@string/settings_logout"
+            android:textColor="#ea804e" />
+    </LinearLayout>
+
+</RelativeLayout>
