@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="thoth.holter.ecg_010"
     android:sharedUserId="thoth.holter.ecg_010.skin"
-    android:versionCode="6"
-    android:versionName="1.1.6" >
+    android:versionCode="7"
+    android:versionName="1.1.73" >
 
     <uses-sdk
         android:minSdkVersion="18"
@@ -65,7 +65,8 @@
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
+        </activity>
+
         -->
 
         <activity
@@ -136,11 +137,28 @@
                 <action android:name="android.intent.action.BATTERY_CHANGED" />
             </intent-filter>
         </receiver>
-                <receiver android:name=".receiver.GPSReceiver" >
+        
+        <receiver android:name=".receiver.GPSReceiver" >
             <intent-filter>
                 <action android:name="com.broadchance.wdecgrec.gps.GpsService" />
             </intent-filter>
-        </receiver>
+        </receiver>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         -->
         <receiver
             android:name="thoth.holter.ecg_010.receiver.BootCompleteReceiver"

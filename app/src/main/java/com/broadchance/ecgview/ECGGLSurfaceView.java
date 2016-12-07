@@ -613,17 +613,17 @@ public class ECGGLSurfaceView extends GLSurfaceView {
 			float speed = 0;
 			if (level == EcgLevel.Level1) {
 				// 10mm/s
-				speed = (int) (FrameDataMachine.FRAME_DOTS_FREQUENCY / 10.0);
+				speed =  (FrameDataMachine.FRAME_DOTS_FREQUENCY_FILTER / 10.0f);
 				deltaX = grid.getxUnitCellSize() / speed;
 				currTotalPointNumber = (int) (grid.getGRID_NUM_H() * speed);
 			} else if (level == EcgLevel.Level2) {
 				// 20mm/s
-				speed = (int) (FrameDataMachine.FRAME_DOTS_FREQUENCY / 20.0);
+				speed = (FrameDataMachine.FRAME_DOTS_FREQUENCY_FILTER / 20.0f);
 				deltaX = grid.getxUnitCellSize() / speed;
 				currTotalPointNumber = (int) (grid.getGRID_NUM_H() * speed);
 			} else if (level == EcgLevel.Level3) {
-				// 20mm/s
-				speed = (int) (FrameDataMachine.FRAME_DOTS_FREQUENCY / 25.0);
+				// 25mm/s
+				speed =  (FrameDataMachine.FRAME_DOTS_FREQUENCY_FILTER / 25.0f);
 				deltaX = grid.getxUnitCellSize() / speed;
 				currTotalPointNumber = (int) (grid.getGRID_NUM_H() * speed);
 			}

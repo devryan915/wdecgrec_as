@@ -30,9 +30,13 @@ static void ring_put(ECG_HND * hnd, int ch, int d)
     hnd->ecg_chx_input[ch][IDX(hnd->idx_w[ch])] = d;
 
 
-    /*²åÖµ³É250Hz*/
+    /*æ’å€¼æˆ250Hz*/
+#if 0
     hnd->ecg250_chx_input[ch][IDX250(hnd->idx250_w[ch])]
         = (hnd->ecg_chx_input[ch][IDX(hnd->idx_w[ch] - 1)] + hnd->ecg_chx_input[ch][IDX(hnd->idx_w[ch])]) / 2 ;
+#else
+    hnd->ecg250_chx_input[ch][IDX250(hnd->idx250_w[ch] + 0)] = hnd->ecg_chx_input[ch][IDX(hnd->idx_w[ch])] ;
+#endif
 
     hnd->ecg250_chx_input[ch][IDX250(hnd->idx250_w[ch] + 1)] = hnd->ecg_chx_input[ch][IDX(hnd->idx_w[ch])] ;
 
@@ -98,7 +102,7 @@ ECG_E ecg_input(ECG_HND *hnd, void * input, int len, void *output, int * outlen)
     {
         short v = data[i * ECG_WORD_SIZE + 0] << 8 | data[i * ECG_WORD_SIZE + 1];
 
-        if( v == (short)LEAD_OFF_INDICATE ) /* Èç¹ûÊÇÍÑÂä±êÖ¾£¬ÉèÖÃÊı¾İÎª0 */
+        if( v == (short)LEAD_OFF_INDICATE ) /* å¦‚æœæ˜¯è„±è½æ ‡å¿—ï¼Œè®¾ç½®æ•°æ®ä¸º0 */
         {
             v = 0;
         }
@@ -108,7 +112,7 @@ ECG_E ecg_input(ECG_HND *hnd, void * input, int len, void *output, int * outlen)
     ECG_DBG("CH %d After enqueue IDX 0x%08x  0x%08x, Samples %d\n", hnd->channel_id, hnd->idx_w[0], hnd->idx250_w[0], len);
 
 
-    /* ÂË²¨¼ÆËã */
+    /* æ»¤æ³¢è®¡ç®— */
     idx = hnd->idx250_w[0];
     idx -= 2 * len;
 
@@ -116,17 +120,17 @@ ECG_E ecg_input(ECG_HND *hnd, void * input, int len, void *output, int * outlen)
 
     for(i = 0; i < 2 * len; i++, idx++)
     {
-        unsigned char * data = (unsigned char *) output + ( i >> 1) * ECG_WORD_SIZE;
+        unsigned char * data = (unsigned char *) output + ( i ) * ECG_WORD_SIZE;
         int v;
 
         if(hnd->fl_pass && idx <= 1800)
         {
-            /* ×î¿ªÊ¼µÄ 1800 ¸öÊı, Ô­ÑùÊä³ö */
+            /* æœ€å¼€å§‹çš„ 1800 ä¸ªæ•°, åŸæ ·è¾“å‡º */
             v = (int)hnd->ecg250_chx_input[0][IDX250(idx)];
         }
         else
         {
-            /* ºóĞøµÄÁ¬ĞøÊı¾İ */
+            /* åç»­çš„è¿ç»­æ•°æ® */
             double sum = 0;
 
             hnd->fl_pass = 0;
@@ -140,7 +144,7 @@ ECG_E ecg_input(ECG_HND *hnd, void * input, int len, void *output, int * outlen)
             v = (int) sum;
         }
 
-        if((idx & 0x1) == 0x1)
+        //if((idx & 0x1) == 0x1)
         {
             data[0] = (v & 0xff00) >> 8;
             data[1] = (v & 0xff);
@@ -149,30 +153,30 @@ ECG_E ecg_input(ECG_HND *hnd, void * input, int len, void *output, int * outlen)
         //ECG_DBG("Output:CH %d:0x%08x:%6d[0x%02x %02x]\n", hnd->channel_id ,idx,  v, data[0], data[1]);
     }
 
-    *outlen = len * ECG_WORD_SIZE;
+    *outlen = 2 * len * ECG_WORD_SIZE;
 
     /*
-     * ĞÄÂÊ¼ÆËã: ĞÄÂÊ¼ÆËã±ØĞëÓĞ×ã¹»µÄÊı¾İ²Å¿ÉÒÔ¿ªÊ¼¼ÆËã
-     * ÎªÁË¼õÉÙ¼ÆËãÁ¿£¬½ö½öÔÚchannel 1ÉÏ¼ÆËãĞÄÂÊÊı¾İ
+     * å¿ƒç‡è®¡ç®—: å¿ƒç‡è®¡ç®—å¿…é¡»æœ‰è¶³å¤Ÿçš„æ•°æ®æ‰å¯ä»¥å¼€å§‹è®¡ç®—
+     * ä¸ºäº†å‡å°‘è®¡ç®—é‡ï¼Œä»…ä»…åœ¨channel 1ä¸Šè®¡ç®—å¿ƒç‡æ•°æ®
      *
      */
     if(hnd->channel_id != 0)
         return ECG_OK;
 
-    /* ¼ì²éÊÇ·ñÓĞ×ã¹»µÄĞÄÂÊÊı¾İ */
+    /* æ£€æŸ¥æ˜¯å¦æœ‰è¶³å¤Ÿçš„å¿ƒç‡æ•°æ® */
     if(hnd->hr_pass && hnd->idx_w[0] <= HR_LEN)
         return ECG_OK;
 
     hnd->hr_pass = 0;
 
-    /* Êı¾İ¹»¶àµÄÇé¿öÏÂ£¬Êä³öĞÄÂÊ */
+    /* æ•°æ®å¤Ÿå¤šçš„æƒ…å†µä¸‹ï¼Œè¾“å‡ºå¿ƒç‡ */
 
 
     idx = hnd->idx_w[0];
     idx -= HR_LEN;
 
 
-    /* ¸´ÖÆÍ¨µÀÊı¾İµ½Æ½Ì¹»º´æ£¬Ô´Êı¾İÔÚ»·ĞÎ¶ÓÁĞÖĞ£¬ ¿ÉÄÜ»ØÈÆ */
+    /* å¤åˆ¶é€šé“æ•°æ®åˆ°å¹³å¦ç¼“å­˜ï¼Œæºæ•°æ®åœ¨ç¯å½¢é˜Ÿåˆ—ä¸­ï¼Œ å¯èƒ½å›ç»• */
     for(i = 0; i < HR_LEN; i++, idx++)
     {
         hr_buffer[i] = hnd->ecg_chx_input[0][IDX(idx)];

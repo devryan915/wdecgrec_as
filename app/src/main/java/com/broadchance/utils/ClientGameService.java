@@ -385,11 +385,11 @@ public class ClientGameService {
 			protected UploadFileResponse doInBackground(
 					Map<String, Object>... params) {
 				Map<String, Object> paramsIn = params[0];
-				if (ConstantConfig.Debug) {
-					LogUtil.d(TAG, "正在上传" + paramsIn.get("zipFile") + "\n"
-							+ paramsIn.get("indata"));
-					UIUtil.showRemoteToast("正在上传" + paramsIn.get("zipFile"));
-				}
+//				if (ConstantConfig.Debug) {
+//					LogUtil.d(TAG, "正在上传" + paramsIn.get("zipFile") + "\n"
+//							+ paramsIn.get("indata"));
+//					UIUtil.showRemoteToast("正在上传" + paramsIn.get("zipFile"));
+//				}
 				// backCall = (HttpReqCallBack<UploadFileResponse>) paramsIn
 				// .get("backCall");
 				// String url = "http://dx2.9ht.com/xf/9ht.com.coc-xiaomi.apk";

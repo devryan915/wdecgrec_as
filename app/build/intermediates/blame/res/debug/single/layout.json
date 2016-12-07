@@ -32,12 +32,12 @@
         "source": "D:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\src\\main\\res\\layout\\listview_offdata_item.xml"
     },
     {
-        "merged": "D:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\build\\intermediates\\res\\merged\\debug\\layout\\listview_chooseble_item.xml",
-        "source": "D:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\src\\main\\res\\layout\\listview_chooseble_item.xml"
-    },
-    {
         "merged": "D:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_input_test.xml",
         "source": "D:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\src\\main\\res\\layout\\dialog_input_test.xml"
+    },
+    {
+        "merged": "D:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\build\\intermediates\\res\\merged\\debug\\layout\\listview_chooseble_item.xml",
+        "source": "D:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\src\\main\\res\\layout\\listview_chooseble_item.xml"
     },
     {
         "merged": "D:\\workspace\\AS\\Wdecgrec\\Wdecgrec\\app\\build\\intermediates\\res\\merged\\debug\\layout\\listview_changeskin_item.xml",
