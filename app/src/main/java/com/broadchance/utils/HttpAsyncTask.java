@@ -105,7 +105,7 @@ public class HttpAsyncTask<T extends BaseResponse<?>> extends
 								dialogContent.setText("数据加载中...");
 								progressDialog.show();
 							} catch (Exception exp) {
-								LogUtil.e(TAG, exp);
+//								LogUtil.e(TAG, exp);
 							}
 						}
 					}
@@ -114,9 +114,9 @@ public class HttpAsyncTask<T extends BaseResponse<?>> extends
 					closeLoading();
 					if (!mIsLoaded) {
 						mIsTimeOut = true;
-						if (ConstantConfig.Debug) {
-							LogUtil.d(TAG, "请求超时: Url:" + mUrl);
-						}
+//						if (ConstantConfig.Debug) {
+//							LogUtil.d(TAG, "请求超时: Url:" + mUrl);
+//						}
 						if (mCallBack != null) {
 							// 请求超时
 							mCallBack.doError("请求超时: Url:" + mUrl);
@@ -205,13 +205,13 @@ public class HttpAsyncTask<T extends BaseResponse<?>> extends
 					} else {
 						mIsError = true;
 						mErrorMsg = response.getData();
-						LogUtil.e(TAG, mErrorMsg);
+//						LogUtil.e(TAG, mErrorMsg);
 					}
 				}
 			} catch (Exception e) {
 				mIsError = true;
 				mErrorMsg = "反序列化失败：\r\n" + e.toString();
-				LogUtil.e(TAG, e);
+//				LogUtil.e(TAG, e);
 			}
 		}
 		// 请求失败
@@ -219,17 +219,17 @@ public class HttpAsyncTask<T extends BaseResponse<?>> extends
 			if (mCallBack != null) {
 				mCallBack.doError(mErrorMsg);
 			}
-			if (ConstantConfig.Debug) {
-				LogUtil.d(TAG, mErrorMsg);
-			}
+//			if (ConstantConfig.Debug) {
+//				LogUtil.d(TAG, mErrorMsg);
+//			}
 		} else if (!hasData && !mIsTimeOut) {// 请求无数据返回
 			mErrorMsg = "no data";
 			if (mCallBack != null) {
 				mCallBack.doError(mErrorMsg);
 			}
-			if (ConstantConfig.Debug) {
-				LogUtil.d(TAG, mErrorMsg);
-			}
+//			if (ConstantConfig.Debug) {
+//				LogUtil.d(TAG, mErrorMsg);
+//			}
 		}
 		super.onPostExecute(response);
 	}

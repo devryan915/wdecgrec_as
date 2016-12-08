@@ -366,7 +366,7 @@ public class BleDataParserService extends Service {
         if (ConstantConfig.Debug) {
             long diff = (System.currentTimeMillis() - lastExeTime);
             lastExeTime = System.currentTimeMillis();
-            if (diff > 1000) {
+            if (diff > 5000) {
                 LogUtil.d(
                         TAG,
                         "executeData:"
@@ -395,11 +395,11 @@ public class BleDataParserService extends Service {
                 final long time = System.currentTimeMillis();
                 final int presize = receivedQueue.size();
                 processData();
-                final int csize = receivedQueue.size() - presize;
-                final long cost = System.currentTimeMillis() - time;
                 if (ConstantConfig.Debug) {
-                    Log.d(ConstantConfig.DebugTAG, TAG + " 处理能力" + csize
-                            + " 处理耗时:" + (cost) + " 错过次数" + lostTimes);
+                    final int csize = receivedQueue.size() - presize;
+                    final long cost = System.currentTimeMillis() - time;
+//                    Log.d(ConstantConfig.DebugTAG, TAG + " 处理能力" + csize
+//                            + " 处理耗时:" + (cost) + " 错过次数" + lostTimes);
                     if (cost > 10000) {
                         UIUtil.showToast("cpu不给力  处理能力" + csize + " 处理耗时:"
                                 + (cost));
@@ -795,7 +795,7 @@ public class BleDataParserService extends Service {
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
         this.registerReceiver(mGattUpdateReceiver, makeGattUpdateIntentFilter());
-        flags = START_STICKY;
+        flags = Service.START_STICKY;
         // mEService = Executors.newScheduledThreadPool(2);
         receivedQueue.clear();
         startProcessService();

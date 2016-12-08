@@ -48,6 +48,10 @@ public class ClientGameService {
 	private AtomicBoolean isRrefreshCK = new AtomicBoolean(false);
 
 	public void refreshCertKey() {
+		if(!NetUtil.isConnectNet()){
+			UIUtil.showToast("请检查网络是否可用");
+			return;
+		}
 		if (isRrefreshCK.compareAndSet(false, true)) {
 			final UserInfo user = DataManager.getUserInfo();
 			if (DataManager.isLogin()) {
@@ -100,6 +104,10 @@ public class ClientGameService {
 	 */
 	public void getKey(JSONObject param,
 			final HttpReqCallBack<ServerResponse> backCall) {
+		if(!NetUtil.isConnectNet()){
+			UIUtil.showToast("请检查网络是否可用");
+			return;
+		}
 		String indata = param.toString();
 		Map<String, Object> reparams = new HashMap<String, Object>();
 		reparams.put("action", "get_key");
@@ -116,11 +124,21 @@ public class ClientGameService {
 	 */
 	public void login(JSONObject param, String certKey,
 			HttpReqCallBack<ServerResponse> backCall) {
+		if(!NetUtil.isConnectNet()){
+			if(backCall!=null){
+				backCall.doError("请检查网络是否可用");
+			}
+			return;
+		}
 		try {
 			param.put("appname", AppApplication.PKG_NAME);
 			param.put("versioncode", AppApplication.verCode);
 		} catch (JSONException e) {
 			e.printStackTrace();
+			if(backCall!=null){
+				backCall.doError("请检查网络是否可用");
+			}
+			return;
 		}
 		String indata = param.toString();
 		Map<String, Object> reparams = new HashMap<String, Object>();
@@ -131,6 +149,10 @@ public class ClientGameService {
 	}
 
 	public void getAlertCFG() {
+		if(!NetUtil.isConnectNet()){
+
+			return;
+		}
 		try {
 			JSONObject param = new JSONObject();
 			UserInfo user = DataManager.getUserInfo();
@@ -171,6 +193,7 @@ public class ClientGameService {
 												AlertType.A00001);
 									} catch (Exception e) {
 										e.printStackTrace();
+										LogUtil.d(TAG,"获取"+AlertType.A00001.getValue()+"预警配置报错"+"\n"+e.toString());
 									}
 									try {
 										setCFG(cfgs
@@ -179,6 +202,7 @@ public class ClientGameService {
 												AlertType.A00002);
 									} catch (Exception e) {
 										e.printStackTrace();
+										LogUtil.d(TAG,"获取"+AlertType.A00002.getValue()+"预警配置报错"+"\n"+e.toString());
 									}
 									try {
 										setCFG(cfgs
@@ -187,6 +211,7 @@ public class ClientGameService {
 												AlertType.A00003);
 									} catch (Exception e) {
 										e.printStackTrace();
+										LogUtil.d(TAG,"获取"+AlertType.A00003.getValue()+"预警配置报错"+"\n"+e.toString());
 									}
 									try {
 										setCFG(cfgs
@@ -195,6 +220,7 @@ public class ClientGameService {
 												AlertType.A00004);
 									} catch (Exception e) {
 										e.printStackTrace();
+										LogUtil.d(TAG,"获取"+AlertType.A00004.getValue()+"预警配置报错"+"\n"+e.toString());
 									}
 									try {
 										setCFG(cfgs
@@ -203,6 +229,7 @@ public class ClientGameService {
 												AlertType.A00005);
 									} catch (Exception e) {
 										e.printStackTrace();
+										LogUtil.d(TAG,"获取"+AlertType.A00005.getValue()+"预警配置报错"+"\n"+e.toString());
 									}
 									try {
 										setCFG(cfgs
@@ -211,6 +238,7 @@ public class ClientGameService {
 												AlertType.B00001);
 									} catch (Exception e) {
 										e.printStackTrace();
+										LogUtil.d(TAG,"获取"+AlertType.B00001.getValue()+"预警配置报错"+"\n"+e.toString());
 									}
 									try {
 										setCFG(cfgs
@@ -219,6 +247,7 @@ public class ClientGameService {
 												AlertType.B00002);
 									} catch (Exception e) {
 										e.printStackTrace();
+										LogUtil.d(TAG,"获取"+AlertType.B00002.getValue()+"预警配置报错"+"\n"+e.toString());
 									}
 									try {
 										setCFG(cfgs
@@ -227,6 +256,7 @@ public class ClientGameService {
 												AlertType.B00003);
 									} catch (Exception e) {
 										e.printStackTrace();
+										LogUtil.d(TAG,"获取"+AlertType.B00003.getValue()+"预警配置报错"+"\n"+e.toString());
 									}
 									AlertMachine alertMachine = AlertMachine
 											.getInstance();
@@ -258,11 +288,21 @@ public class ClientGameService {
 	 */
 	public void sendAlert(JSONObject param,
 			HttpReqCallBack<ServerResponse> backCall) {
+		if(!NetUtil.isConnectNet()){
+			if(backCall!=null){
+				backCall.doError("请检查网络是否可用");
+			}
+			return;
+		}
 		// UIUserInfoLogin user = DataManager.getUserInfo();
 		try {
 			param.put("mobile", DataManager.getUserInfo().getUserName());
 		} catch (JSONException e) {
 			e.printStackTrace();
+			if(backCall!=null){
+				backCall.doError("参数格式错误");
+			}
+			return;
 		}
 		String indata = param.toString();
 		Map<String, Object> reparams = new HashMap<String, Object>();
@@ -276,6 +316,12 @@ public class ClientGameService {
 	@SuppressWarnings("unchecked")
 	public void uploadRealBleFile(JSONObject param,
 			final HttpReqCallBack<UploadFileResponse> backCall) {
+		if(!NetUtil.isConnectNet()){
+			if(backCall!=null){
+				backCall.doError("请检查网络是否可用");
+			}
+			return;
+		}
 		try {
 			UserInfo user = DataManager.getUserInfo();
 			try {
@@ -293,6 +339,7 @@ public class ClientGameService {
 				if (backCall != null) {
 					backCall.doError(e.toString());
 				}
+				return;
 			}
 			String indata = param.toString();
 			Map<String, Object> reparams = new HashMap<String, Object>();
@@ -335,12 +382,19 @@ public class ClientGameService {
 			if (backCall != null) {
 				backCall.doError(e.toString());
 			}
+			return;
 		}
 	}
 
 	@SuppressWarnings("unchecked")
 	public void uploadBleFile(JSONObject param,
 			final HttpReqCallBack<UploadFileResponse> backCall) {
+		if(!NetUtil.isConnectNet()){
+			if(backCall!=null){
+				backCall.doError("请检查网络是否可用");
+			}
+			return;
+		}
 		UserInfo user = DataManager.getUserInfo();
 		try {
 			param.put("mobile", user.getUserName());
@@ -356,6 +410,7 @@ public class ClientGameService {
 			if (backCall != null) {
 				backCall.doError(e.toString());
 			}
+			return;
 		}
 		File zipFile = null;
 		try {
@@ -371,6 +426,7 @@ public class ClientGameService {
 			if (backCall != null) {
 				backCall.doError(e.toString());
 			}
+			return;
 		}
 		String indata = param.toString();
 		Map<String, Object> reparams = new HashMap<String, Object>();
@@ -419,6 +475,12 @@ public class ClientGameService {
 	@SuppressWarnings("unchecked")
 	public void downLoadApp(String url, File downFile, Handler handler,
 			HttpReqCallBack<DownLoadAPPResponse> backCall) {
+		if(!NetUtil.isConnectNet()){
+			if(backCall!=null){
+				backCall.doError("请检查网络是否可用");
+			}
+			return;
+		}
 		Map<String, Object> reparams = new HashMap<String, Object>();
 		reparams.put("url", url);
 		reparams.put("downFile", downFile);

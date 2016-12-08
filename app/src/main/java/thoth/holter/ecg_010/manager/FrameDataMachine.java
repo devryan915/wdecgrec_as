@@ -601,7 +601,6 @@ public class FrameDataMachine {
                             MAX_BATCH_LIMIT = MAX_BATCH_LIMIT60;
                         }
                     }
-                    System.gc();
                 } catch (Exception e) {
                     LogUtil.e(TAG, e);
                 }

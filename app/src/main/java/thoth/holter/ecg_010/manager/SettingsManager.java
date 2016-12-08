@@ -3,7 +3,6 @@
  */
 package thoth.holter.ecg_010.manager;
 
-import com.broadchance.entity.UIUserInfoLogin;
 import com.broadchance.utils.ConstantConfig;
 import com.broadchance.utils.FileUtil;
 import com.broadchance.utils.SDCardUtils;
@@ -38,17 +37,17 @@ public class SettingsManager {
 	 */
 	public final static int OFFDATA_SIZE_OFF = -1;
 
-	public String getServerURL() {
-		return PreferencesManager.getInstance().getString(
-				ConstantConfig.PREFERENCES_SERVERURL,
-				ConstantConfig.SERVER_URL_DEF);
-	}
-
-	public void setServerURL(String url) {
-		ConstantConfig.SERVER_URL = url;
-		PreferencesManager.getInstance().putString(
-				ConstantConfig.PREFERENCES_SERVERURL, url);
-	}
+//	public String getServerURL() {
+//			return PreferencesManager.getInstance().getString(
+//					ConstantConfig.PREFERENCES_SERVERURL,
+//					ConstantConfig.SERVER_URL_DIS);
+//	}
+//
+//	public void setServerURL(String url) {
+//		ConstantConfig.SERVER_URL = url;
+//		PreferencesManager.getInstance().putString(
+//				ConstantConfig.PREFERENCES_SERVERURL, url);
+//	}
 
 	public void setDpiConfigX(float value) {
 		PreferencesManager.getInstance().putFloat(
